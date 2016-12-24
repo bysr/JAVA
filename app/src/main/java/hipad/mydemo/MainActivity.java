@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatSeekBar;
 import android.util.Log;
+import android.widget.ListView;
 import android.widget.SeekBar;
 
 import java.util.Arrays;
@@ -12,6 +13,8 @@ import java.util.Arrays;
 public class MainActivity extends FragmentActivity {
     private AppCompatSeekBar seekBar;
     private VerticalSeekBar seek_bar1;
+    private ListView listView;
+
 
 
     @Override
