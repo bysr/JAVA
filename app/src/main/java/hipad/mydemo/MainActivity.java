@@ -10,6 +10,9 @@ import android.widget.SeekBar;
 
 import java.util.Arrays;
 
+/**
+ * 添加一句注释
+ */
 public class MainActivity extends FragmentActivity {
     private AppCompatSeekBar seekBar;
     private VerticalSeekBar seek_bar1;
