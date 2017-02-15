@@ -1,53 +1,26 @@
 package com.example;
 
-import java.util.Arrays;
-import java.util.Collections;
+import java.security.interfaces.RSAPrivateKey;
+import java.security.interfaces.RSAPublicKey;
 
 public class MyClass {
 
 
     public static void main(String[] arg0) {
+        try {
+            RSAUtil rsa = new RSAUtil();
+            String str = "yanzi1225627";
+            RSAPublicKey pubKey = rsa.getRSAPublicKey();
 
-        int[] key = {23, 18692, 26, 100};
-//
-
-//        for (int i = 0; i < key.length; i++) {
-//
-//
-//            int a = Arrays.binarySearch(keyTools.XScale, key[i]);
-//
-//            System.out.println(a);
-//
-//            if (a != -2)
-//                System.out.println(keyTools.YScale[a]);
-//
-//        }
-
-
-        for (int i=0;i<100;i++){
-
-            double mm=i/250.0000;
-            System.out.println(mm);
-
+            RSAPrivateKey priKey = rsa.getRSAPrivateKey();
+            byte[] enRsaBytes = rsa.encrypt(pubKey, str.getBytes());
+            String enRsaStr = new String(enRsaBytes, "UTF-8");
+            System.out.println("jiami==" + enRsaStr);
+            System.out.println("jiemi==" + new String(rsa.decrypt(priKey, rsa.encrypt(pubKey, str.getBytes()))));
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-
-//        double mm = 23 / 54;
-//        System.out.println(mm);
-//        mm = 23 / 54.000;
-//        System.out.println(mm);
-//        mm = 23 / 54.0000;
-//        System.out.println(mm);
-//        float ff = 23 / 54;
-//        System.out.println(ff);
-//        ff = (23 / 54.000f);
-//        System.out.println(ff);
-//        ff=23/54.0000f;
-//        System.out.println(ff);
-
-
-
-//        System.out.println(keyTools.XScale.length);
-//        System.out.println(keyTools.YScale.length);
 
 
     }
