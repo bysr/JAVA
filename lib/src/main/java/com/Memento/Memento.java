@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /**
- * 备忘录角色
+ * 备忘录角色 备份数据
  * Created by wangyawen on 2017/1/24 0024.
  */
 public class Memento {
