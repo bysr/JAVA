@@ -30,7 +30,7 @@ public class Wanshu {
 
         List<Integer> list = new ArrayList<>();
         //求出所有的因数
-        for (int i = 1; i < n ; i++) {
+        for (int i = 1; i <= n / 2; i++) {
             if (n % i == 0) {
                 list.add(i);
             }
