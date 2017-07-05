@@ -3,6 +3,7 @@ package com.example;
 /**
  * Created by wangyawen on 2017/7/5 0005.
  * 完全平方数，一个数+100是完全平方数，再+168还是完全平方数
+ *
  */
 public class Test13 {
 
