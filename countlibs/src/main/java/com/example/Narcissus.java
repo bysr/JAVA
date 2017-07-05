@@ -16,7 +16,6 @@ public class Narcissus {
     }
 
     public static void waterFlower(int m) {
-
         //百位
         int a = m / 100;
         //个位
