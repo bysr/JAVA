@@ -11,7 +11,6 @@ public class Narcissus {
     public static void main(String[] arg) {
         for (int i = 100; i <= 999; i++) {
             waterFlower(i);
-
         }
     }
 
